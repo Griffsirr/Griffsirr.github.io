@@ -12,7 +12,7 @@ masthead_title: # overrides the website title displayed in the masthead, use " "
 copyright: # "copyright" name, defaults to site.title
 copyright_url: # "copyright" URL, defaults to site.url
 # Theme settings (used by the existing CSS)
-minimal_mistakes_skin    : "air" # "default", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "dirt" # "default", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 favicon: "/assets/images/a8c2c734827e565c4c0a4e99dd3cf184.jpg" # Favicon path (update this file)
 favicon_version: 1 # Increment to force browsers to refresh the favicon
 
