@@ -31,9 +31,23 @@ feature_row:
     alt: "placeholder image 4"
     title: "Placeholder 3"
     excerpt: "This is some sample content that goes here with **Markdown** formatting."
+
+project_row:
+  
+title: "Project Overview"
+  excerpt: "This project was created in Unity using C#. It focuses on atmospheric sci-fi horror and tense exploration. I worked on the gameplay systems, environment art and overall world design."
+
+  
+title: "blah"
+  excerpt: '<iframe width="100%" height="315"
+    src="https://www.youtube.com/embed/watch?v=Pc0nn_RbqOc"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen></iframe>'
 ---
 
 {% include feature_row id="intro" type="center" %}
 
 {% include feature_row %}
 
+{% include feature_row id="project_row" %}
