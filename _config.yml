@@ -4,8 +4,8 @@ title_separator: "-"
 subtitle: # site tagline that appears below site title in masthead
 description: "A simple portfolio starter for games students." # Short site summary
 name: "Therese Charles"
-url: "https://dr-tc.github.io" # Your GitHub Pages domain
-baseurl: "/portfolio" # Repo name if site is in a project repo, blank for user/org site
+url: "https://Griffsirr.github.io" # Your GitHub Pages domain
+baseurl: "" # Repo name if site is in a project repo, blank for user/org site
 locale: "en-GB" # Language/region
 logo: "/assets/images/logo-placeholder.png" # path of logo image to display in the masthead
 masthead_title: # overrides the website title displayed in the masthead, use " " for no title
