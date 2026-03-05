@@ -1,0 +1,8 @@
+<div class="button-wrapper {{ include.wrapper_class }}">
+  <a href="{{ include.url | relative_url }}"
+     class="btn {{ include.class }}"
+     {% if include.target %}target="{{ include.target }}"{% endif %}
+     {% if include.target == "_blank" %}rel="noopener noreferrer"{% endif %}
+     {% if include.download %}download="{{ include.download }}"{% endif %}
+  >{{ include.label | default: "Click me" }}</a>
+</div>

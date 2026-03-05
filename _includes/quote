@@ -1,0 +1,6 @@
+<blockquote class="quote {{ include.class }}">
+  <p class="quote__text">{{ include.text | default: include.content | markdownify | remove: "<p>" | remove: "</p>" }}</p>
+  {% if include.author %}
+    <p class="quote__author">— {{ include.author }}</p>
+  {% endif %}
+</blockquote>

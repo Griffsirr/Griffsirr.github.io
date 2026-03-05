@@ -1,0 +1,115 @@
+# Basic site settings (edit these first)
+title: "Student Portfolio" # Site title shown in the browser and header
+title_separator: "-"
+subtitle: # site tagline that appears below site title in masthead
+description: "A simple portfolio starter for games students." # Short site summary
+name: "Therese Charles"
+url: "https://dr-tc.github.io" # Your GitHub Pages domain
+baseurl: "/portfolio" # Repo name if site is in a project repo, blank for user/org site
+locale: "en-GB" # Language/region
+logo: "/assets/images/logo-placeholder.png" # path of logo image to display in the masthead
+masthead_title: # overrides the website title displayed in the masthead, use " " for no title
+copyright: # "copyright" name, defaults to site.title
+copyright_url: # "copyright" URL, defaults to site.url
+# Theme settings (used by the existing CSS)
+minimal_mistakes_skin    : "air" # "default", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+favicon: "/assets/images/favicon.png" # Favicon path (update this file)
+favicon_version: 1 # Increment to force browsers to refresh the favicon
+
+
+
+# Site Author
+author:
+  name: "Student Name" # Name of the student
+  avatar: # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio: "Add short bio here" # Bio of the student
+  location: "Add location here" # Location of the student
+  email: # Email of the student
+
+  # Author links
+  links:
+    - label: "Email" # Email link
+      icon: "fas fa-fw fa-envelope-square"
+      # url: "mailto:your.name@email.com"
+    - label: "Website" # Website link
+      icon: "fas fa-fw fa-link"
+      # url: "https://your-website.com"
+    - label: "Twitter" # Twitter link
+      icon: "fab fa-fw fa-twitter-square"
+      # url: "https://twitter.com/"
+    - label: "Facebook" # Facebook link
+      icon: "fab fa-fw fa-facebook-square"
+      # url: "https://facebook.com/"
+    - label: "GitHub" # GitHub link
+      icon: "fab fa-fw fa-github"
+      # url: "https://github.com/"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      # url: "https://instagram.com/"
+
+# Site Footer
+footer: # Site footer
+  links: # Footer links
+    - label: "Twitter" # Twitter link
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/"
+      target: "_blank"
+    - label: "Facebook" # Facebook link
+      icon: "fab fa-fw fa-facebook-square"
+      # url:
+      target: "_blank"
+    - label: "GitHub" # GitHub link
+      icon: "fab fa-fw fa-github"
+      # url:
+      target: "_blank"
+    - label: "GitLab" # GitLab link
+      icon: "fab fa-fw fa-gitlab"
+      # url:
+      target: "_blank"
+    - label: "Bitbucket" # Bitbucket link
+      icon: "fab fa-fw fa-bitbucket"
+      # url:
+      target: "_blank"
+    - label: "Instagram" # Instagram link
+      icon: "fab fa-fw fa-instagram"
+      # url:
+      target: "_blank"
+  since: "2026" # Year shown in the footer
+
+
+# Reading files (what Jekyll includes/excludes)
+include:
+  - .htaccess
+  - _pages
+exclude:
+  - vendor
+  - .bundle
+  - .sass-cache
+  - node_modules
+  - Gemfile
+  - package.json
+  - package-lock.json
+  - Rakefile
+  - /docs
+  - /test
+
+# Conversion (Markdown)
+markdown: kramdown
+highlighter: rouge
+
+# Markdown processing
+kramdown:
+  input: GFM
+
+# Sass/SCSS (site styling)
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Outputting (URL style)
+permalink: /:title/
+
+# Plugins (GitHub Pages supports these)
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed

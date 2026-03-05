@@ -1,0 +1,15 @@
+# UI text labels (trimmed)
+en-GB:
+  page: "Page"
+  more_label: "Learn More"
+  ext_link_label: "Direct Link"
+  powered_by: "Powered by"
+  results_found: "Result(s) found"
+  skip_primary_nav: "Skip to primary navigation"
+  skip_content: "Skip to content"
+  skip_footer: "Skip to footer"
+  less_than: "less than"
+  minute_read: "minute read"
+  date_label: "Updated:"
+  menu_label: "Toggle menu"
+  search_label: "Toggle search"

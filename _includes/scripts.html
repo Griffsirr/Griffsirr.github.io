@@ -1,0 +1,53 @@
+{% if site.footer_scripts %}
+  {% for script in site.footer_scripts %}
+    <script src="{{ script | relative_url }}"></script>
+  {% endfor %}
+{% else %}
+  <script src="{{ '/assets/js/main.min.js' | relative_url }}"></script>
+{% endif %}
+
+{% comment %}Analytics/comments removed for student template{% endcomment %}
+
+<script>
+  (function () {
+    if (!window.jQuery) return;
+
+    function initGalleryLightbox() {
+      if (!window.jQuery || !window.jQuery.fn || !window.jQuery.fn.magnificPopup) return;
+
+      var groups = {};
+      window.jQuery(".gallery__link").each(function () {
+        var group = window.jQuery(this).data("gallery") || "gallery";
+        groups[group] = true;
+      });
+
+      Object.keys(groups).forEach(function (group) {
+        window.jQuery('.gallery__link[data-gallery="' + group + '"]').magnificPopup({
+          type: "image",
+          gallery: { enabled: true },
+          image: {
+            titleSrc: function (item) {
+              return item.el.data("caption") || item.el.attr("title");
+            }
+          }
+        });
+      });
+    }
+
+    if (window.jQuery.fn && window.jQuery.fn.magnificPopup) {
+      initGalleryLightbox();
+      return;
+    }
+
+    var script = document.createElement("script");
+    script.src = "{{ '/assets/js/plugins/jquery.magnific-popup.js' | relative_url }}";
+    script.onload = initGalleryLightbox;
+    document.body.appendChild(script);
+  })();
+</script>
+
+{% if site.after_footer_scripts %}
+  {% for script in site.after_footer_scripts %}
+    <script src="{{ script | relative_url }}"></script>
+  {% endfor %}
+{% endif %}

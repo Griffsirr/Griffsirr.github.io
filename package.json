@@ -1,0 +1,27 @@
+{
+  "name": "portfolio",
+  "private": true,
+  "version": "4.27.3",
+  "description": "Student portfolio site.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dr-tc/portfolio.git"
+  },
+  "keywords": [
+    "jekyll",
+    "theme",
+    "minimal"
+  ],
+  "author": "Michael Rose",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dr-tc/portfolio/issues"
+  },
+  "homepage": "https://dr-tc.github.io/portfolio/",
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "devDependencies": {
+    "uglify-js": "^3.17.4"
+  }
+}

@@ -1,0 +1,31 @@
+<meta charset="utf-8">
+<title>{{ page.title | default: site.title }}</title>
+{% if page.description or site.description %}
+  <meta name="description" content="{{ page.description | default: site.description }}">
+{% endif %}
+<link rel="canonical" href="{{ page.url | absolute_url }}">
+
+{%- comment %} https://docs.google.com/presentation/d/1rmxwWa9P6_xHqonmh5ONXRS-jPc5XKbnv99Rjkhe04s/present {% endcomment -%}
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+{% assign favicon_path = site.favicon | default: '/assets/images/favicon.png' %}
+{% assign favicon_version = site.favicon_version | default: 1 %}
+<link rel="icon" type="image/png" sizes="32x32" href="{{ favicon_path | relative_url }}?v={{ favicon_version }}">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  {% if site.enable_copy_code_button -%}
+    window.enable_copy_code_button = true;
+  {%- endif %}
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+{% if site.head_scripts %}
+  {% for script in site.head_scripts %}
+    <script src="{{ script | relative_url }}"></script>
+  {% endfor %}
+{% endif %}

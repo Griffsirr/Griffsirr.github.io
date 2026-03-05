@@ -1,0 +1,16 @@
+<div class="download {{ include.class }}">
+  {% if include.title %}
+    <h2 class="download__title">{{ include.title }}</h2>
+  {% endif %}
+  {% if include.text %}
+    <p class="download__text">{{ include.text | markdownify | remove: "<p>" | remove: "</p>" }}</p>
+  {% endif %}
+  {% if include.url %}
+    <a href="{{ include.url | relative_url }}"
+       class="btn btn--primary {{ include.button_class }}"
+       {% if include.target %}target="{{ include.target }}"{% endif %}
+       {% if include.target == "_blank" %}rel="noopener noreferrer"{% endif %}
+       {% if include.download %}download="{{ include.download }}"{% endif %}
+    >{{ include.button_label | default: "Download" }}</a>
+  {% endif %}
+</div>

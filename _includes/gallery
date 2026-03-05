@@ -1,0 +1,51 @@
+{% if include.id %}
+  {% assign gallery = page[include.id] %}
+{% else %}
+  {% assign gallery = page.gallery %}
+{% endif %}
+
+{% if include.layout %}
+  {% assign gallery_layout = include.layout %}
+{% else %}
+  {% if gallery.size == 2 %}
+    {% assign gallery_layout = 'half' %}
+  {% elsif gallery.size >= 3 %}
+    {% assign gallery_layout = 'third' %}
+  {% else %}
+    {% assign gallery_layout = '' %}
+  {% endif %}
+{% endif %}
+
+{% assign gallery_id = include.id | default: 'gallery' %}
+{% assign thumb_height = include.thumb_height %}
+
+<div class="gallery gallery--{{ gallery_layout }} {% if thumb_height %}gallery--thumbs{% endif %} {{ include.class }}"{% if thumb_height %} style="--gallery-thumb-height: {{ thumb_height }};"{% endif %}>
+  {% for img in gallery %}
+    {% assign lightbox_title = img.title | default: img.caption %}
+    <figure class="gallery__item">
+      {% if img.url %}
+        <a href="{{ img.url | relative_url }}"
+          class="gallery__link"
+          data-gallery="{{ gallery_id }}"
+          {% if img.caption %}data-caption="{{ img.caption | escape_once }}"{% endif %}
+          {% if lightbox_title %}title="{{ lightbox_title | escape_once }}"{% endif %}>
+            <img src="{{ img.image_path | relative_url }}"
+                 alt="{% if img.alt %}{{ img.alt | escape_once }}{% endif %}"
+                 {% if img.width or img.height %}style="{% if img.width %}width: {{ img.width }};{% endif %}{% if img.height %}height: {{ img.height }};{% endif %}"{% endif %}
+                 {% if img.class %}class="{{ img.class }}"{% endif %}>
+        </a>
+      {% else %}
+        <img src="{{ img.image_path | relative_url }}"
+             alt="{% if img.alt %}{{ img.alt | escape_once }}{% endif %}"
+             {% if img.width or img.height %}style="{% if img.width %}width: {{ img.width }};{% endif %}{% if img.height %}height: {{ img.height }};{% endif %}"{% endif %}
+             {% if img.class %}class="{{ img.class }}"{% endif %}>
+      {% endif %}
+      {% if img.caption %}
+        <figcaption class="gallery__caption">{{ img.caption | markdownify | remove: "<p>" | remove: "</p>" }}</figcaption>
+      {% endif %}
+    </figure>
+  {% endfor %}
+  {% if include.caption %}
+    <p class="gallery__caption gallery__caption--group">{{ include.caption | markdownify | remove: "<p>" | remove: "</p>" }}</p>
+  {% endif %}
+</div>
