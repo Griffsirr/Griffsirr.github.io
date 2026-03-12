@@ -1,5 +1,5 @@
 ---
-title: "Home"
+title: "Home Page"
 layout: default
 permalink: /home-page/
 ---
