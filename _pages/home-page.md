@@ -1,9 +1,44 @@
 ---
 title: "Home Page"
-layout: default
+layout: splash
 permalink: /home-page/
 ---
-This page uses the `default` layout. It is a minimal wrapper around your content.
-You can use it for simple pages where you want full control over the markup.
+header:
+  overlay_color: "#000"
+  overlay_filter: "0.5"
+  overlay_image: /assets/images/a8c2c734827e565c4c0a4e99dd3cf184.jpg
+  actions:
+    - label: "Download CV"
+      url: "https://drive.google.com/file/d/1ePqrAcar-abcMBgLCd7uo0HUbZDd929t/preview"
+      target: "_blank"
+
+
+excerpt: "You can add text here."
+intro: 
+  - excerpt: 'You can also add text like this....'
+feature_row:
+  - image_path: /assets/images/a8c2c734827e565c4c0a4e99dd3cf184.jpg
+    alt: "placeholder image 1"
+    title: "Placeholder 1"
+    excerpt: "This is some sample content that goes here with **Markdown** formatting."
+  - image_path: /assets/images/a8c2c734827e565c4c0a4e99dd3cf184.jpg
+    alt: "placeholder image 2"
+    title: "Placeholder 2"
+    excerpt: "This is some sample content that goes here with **Markdown** formatting."
+    url: "#test-link"
+    btn_label: "Read More"
+    btn_class: "btn--primary"
+  - image_path: /assets/images/a8c2c734827e565c4c0a4e99dd3cf184.jpg
+    alt: "placeholder image 4"
+    title: "Placeholder 3"
+    excerpt: "This is some sample content that goes here with **Markdown** formatting."
+
+---
+
+{% include feature_row id="intro" type="center" %}
+
+{% include feature_row %}
+
+
 
 
