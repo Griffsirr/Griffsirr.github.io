@@ -21,8 +21,7 @@ skills:
     badges: ["Game Mechanics", "Levels", "UI"]
     text: "Designed mechanics, levels, and player feedback loops."
     level_label: "Beginner"
-
-    feature_row:
+feature_row:
   - image_path: /assets/images/placeholder.png
     alt: "placeholder image 1"
     title: "Placeholder 1"
@@ -39,6 +38,8 @@ skills:
     title: "Placeholder 3"
     excerpt: "This is some sample content that goes here with **Markdown** formatting."
 ---
+{% include skills skills=page.skills %}
+
 ## Featured
 {% include feature_row %}
 
