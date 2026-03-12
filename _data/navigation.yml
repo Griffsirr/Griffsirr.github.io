@@ -2,15 +2,12 @@
 main:
   - title: "Home Page"
     url: /home-page/
-  - title: "Home"
-    url: /
   - title: "Projects"
-    url: /projects/
-    children:
-      - title: "Game Jam"
-        url: /projects/game-jam/
-      - title: "Capstone"
-        url: /projects/capstone/
+    url: /projects-page/
+  - title: "Gallery"
+    url: /gallery-page/
+  - title: "Contact"
+    url: /contact-page/
   - title: "Pages"
     url: /pages/
     children:
