@@ -3,34 +3,23 @@ title: "Page Title"
 layout: splash
 permalink: /
 header:
-  overlay_color: "#000"
-  overlay_filter: "0.5"
   overlay_image: /assets/images/a8c2c734827e565c4c0a4e99dd3cf184.jpg
-  actions:
-    - label: "Download CV"
-      url: "https://drive.google.com/file/d/1ePqrAcar-abcMBgLCd7uo0HUbZDd929t/preview"
-      target: "_blank"
 
-
-excerpt: "You can add text here."
-intro: 
-  - excerpt: 'You can also add text like this....'
-feature_row:
-  - image_path: /assets/images/a8c2c734827e565c4c0a4e99dd3cf184.jpg
-    alt: "placeholder image 1"
-    title: "Placeholder 1"
-    excerpt: "This is some sample content that goes here with **Markdown** formatting."
-  - image_path: /assets/images/a8c2c734827e565c4c0a4e99dd3cf184.jpg
-    alt: "placeholder image 2"
-    title: "Placeholder 2"
-    excerpt: "This is some sample content that goes here with **Markdown** formatting."
-    url: "#test-link"
-    btn_label: "Read More"
-    btn_class: "btn--primary"
-  - image_path: /assets/images/a8c2c734827e565c4c0a4e99dd3cf184.jpg
-    alt: "placeholder image 4"
-    title: "Placeholder 3"
-    excerpt: "This is some sample content that goes here with **Markdown** formatting."
+<div style="display:flex; flex-wrap:wrap; gap:2rem; align-items:flex-start;">
+<!-- LEFT: text content -->
+<div style="flex:1 1 250px; min-width:250px;">
+<h2>1st yr Project Game - 2D Platformer</h2>
+<p>
+As part of a team, I helped design and build a 2D Platform game for my course
+in module CRE135: 2D Game Creation.
+</p>
+</div>
+<!-- RIGHT: video/content area -->
+<div style="flex:1 1 250px; min-width:250px;">
+<!-- Replace this placeholder with a YouTube iframe or a video tag -->
+{% include video id="dQw4w9WgXcQ" provider="youtube" %}
+</div>
+</div>
 
 ---
 
