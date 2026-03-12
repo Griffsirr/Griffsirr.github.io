@@ -25,6 +25,19 @@ in module CRE135: 2D Game Creation.
 </div>
 </div>
 
+<h2>About Me</h2>
+<div style="display:flex; flex-wrap:wrap; gap:2rem; align-items:flex-start;">
+<!-- LEFT: text content -->
+<div style="flex:1 1 250px; min-width:250px;">
+<h2>1st yr Project Game - 2D Platformer</h2>
+{% include skills skills=page.skills %}
+</div>
+<!-- RIGHT: video/content area -->
+<div style="flex:1 1 250px; min-width:250px;">
+<!-- Replace this placeholder with a YouTube iframe or a video tag -->
+{% include skills skills=page.skills %}
+</div>
+</div>
 
 <div id="main" role="main">
   <article class="splash" itemscope itemtype="https://schema.org/CreativeWork"{% if page.locale %} lang="{{ page.locale }}"{% endif %}>
