@@ -1,7 +1,7 @@
 {% assign skills = include.skills | default: page.skills %}
 
 {% if skills %}
-<div class="skills {{ include.class }}">
+<div class="skills" style="display:grid; grid-template-columns: repeat(2, 1fr); gap:2rem;">
   {% for skill in skills %}
     <div class="skill-card">
       {% if skill.icon %}
