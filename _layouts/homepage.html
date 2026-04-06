@@ -27,15 +27,8 @@ in module CRE135: 2D Game Creation.
 
 
 <h2>Skills</h2>
-<div style="display:flex; flex-wrap:wrap; gap:2rem; align-items:flex-start;">
-<!-- LEFT: Skills -->
-<div style="flex:1 1 250px; min-width:250px;">
-{% include skills skills=page.skills %}
-</div>
-<!-- RIGHT: Skills -->
-<div style="flex:1 1 250px; min-width:250px;">
-{% include skills skills=page.skills %}
-</div>
+<div style="display:grid; grid-template-columns: repeat(2, 1fr); gap:2rem;">
+  {% include skills skills=page.skills %}
 </div>
 
 <div id="main" role="main">
