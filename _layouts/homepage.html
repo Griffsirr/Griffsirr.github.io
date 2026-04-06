@@ -26,10 +26,7 @@ in module CRE135: 2D Game Creation.
 </div>
 
 
-<h2>Skills</h2>
-<div style="display:grid; grid-template-columns: repeat(2, 1fr); gap:2rem;">
-  {% include skills skills=page.skills %}
-</div>
+{% include skills skills=page.skills %}
 
 <div id="main" role="main">
   <article class="splash" itemscope itemtype="https://schema.org/CreativeWork"{% if page.locale %} lang="{{ page.locale }}"{% endif %}>
