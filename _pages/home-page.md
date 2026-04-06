@@ -21,6 +21,16 @@ skills:
     badges: ["Game Mechanics", "Levels", "UI"]
     text: "Designed mechanics, levels, and player feedback loops."
     level_label: "Beginner"
+    - name: "C#"
+    icon: "fas fa-code"
+    badges: ["OOP", "Scripting"]
+    text: "Used for gameplay systems in Unity."
+    years: 2
+  - name: "Blender"
+    icon: "fas fa-cube"
+    badges: ["3D Modelling"]
+    text: "Created simple models and assets."
+    level_label: "Intermediate"
 feature_row:
   - image_path: /assets/images/placeholder.png
     alt: "placeholder image 2"
