@@ -16,40 +16,42 @@
 
   <!-- RIGHT: SOCIAL ICONS -->
   <div style="display:flex; gap:1rem;">
-    <a href="https://twitter.com/yourname" target="_blank" style="color:inherit;">
+    <a href="https://twitter.com/yourname" target="_blank" class="nav-icon">
       <i class="fab fa-twitter"></i>
     </a>
-    <a href="https://instagram.com/yourname" target="_blank" style="color:inherit;">
+    <a href="https://instagram.com/yourname" target="_blank" class="nav-icon">
       <i class="fab fa-instagram"></i>
     </a>
-    <a href="https://github.com/yourname" target="_blank" style="color:inherit;">
+    <a href="https://github.com/yourname" target="_blank" class="nav-icon">
       <i class="fab fa-github"></i>
+    </a>
+    <a href="https://discord.gg/yourinvite" target="_blank" class="nav-icon">
+      <i class="fab fa-discord"></i>
     </a>
   </div>
 </nav>
 
 <style>
-.nav-link {
+.nav-link, .nav-icon {
   color: inherit;
   text-decoration: none;
   position: relative;
   transition: color 0.2s;
 }
-.nav-link:hover {
+.nav-link:hover, .nav-icon:hover {
   color: #a18b6d;
 }
-.nav-link::after {
+.nav-link::after, .nav-icon::after {
   content: '';
   display: block;
   height: 2px;
   width: 0;
-  background: #a18b6d; 
+  background: #a18b6d;
   transition: width 0.3s;
   position: absolute;
-  bottom: -2px;
   left: 0;
 }
-.nav-link:hover::after {
+.nav-link:hover::after, .nav-icon:hover::after {
   width: 100%;
 }
 </style>
