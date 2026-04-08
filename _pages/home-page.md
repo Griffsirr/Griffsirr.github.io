@@ -31,25 +31,27 @@ skills:
 
 feature_row:
   - image_path: /assets/images/placeholder.png
-    alt: "placeholder image 2"
-    title: "Placeholder 2"
-    excerpt: "This is some sample content that goes here with **Markdown** formatting."
+    alt: "Game art and visual design"
+    title: "Game Art"
+    excerpt: "A collection of my game-focused artwork, including pixel art, UI design and visual assets created for both 2D and 3D projects."
     url: "/gallery-page/"
-    btn_label: "Gallery"
+    btn_label: "View Gallery"
     btn_class: "btn--primary"
+
   - image_path: /assets/images/placeholder.png
-    alt: "placeholder image 2"
-    title: "Placeholder 2"
-    excerpt: "This is some sample content that goes here with **Markdown** formatting."
+    alt: "Game development projects"
+    title: "Game Projects"
+    excerpt: "Explore the games I’ve developed using Unity and C#, including solo projects and collaborative work focused on gameplay, storytelling and design."
     url: "/projects-page/"
-    btn_label: "Projects"
+    btn_label: "View Projects"
     btn_class: "btn--primary"
+
   - image_path: /assets/images/placeholder.png
-    alt: "placeholder image 2"
-    title: "Placeholder 2"
-    excerpt: "This is some sample content that goes here with **Markdown** formatting."
+    alt: "General digital and traditional art"
+    title: "General Art"
+    excerpt: "A wider showcase of my creative work, including digital illustrations, character designs and visual experiments outside of game development."
     url: "/gallery-page/"
-    btn_label: "Gallery"
+    btn_label: "View Gallery"
     btn_class: "btn--primary"
 ---
 
