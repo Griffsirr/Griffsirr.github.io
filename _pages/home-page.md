@@ -10,24 +10,28 @@ header:
 skills:
   - name: "Unity Development"
     icon: "fab fa-fw fa-unity"
-    badges: ["C#", "Prototyping", "Gameplay Systems"]
-    text: "Developed multiple game prototypes in Unity, focusing on core gameplay mechanics, player controls and responsive systems. Experienced in turning ideas into playable builds and iterating based on testing."
+    badges: ["C#", "Prototyping", "Gameplay"]
+    text: "Developed 2D and 3D game prototypes in Unity, focusing on core mechanics and responsive gameplay."
     years: 2
+
   - name: "Game Design"
     icon: "fas fa-fw fa-gamepad"
-    badges: ["Mechanics", "Level Design", "UX"]
-    text: "Designed engaging gameplay systems, levels and player feedback loops with a focus on player experience. Skilled in analysing what makes games fun and applying those principles to original ideas."
+    badges: ["Mechanics", "Levels", "UX"]
+    text: "Designed gameplay systems, levels and player feedback with a focus on engaging experiences."
     level_label: "Intermediate"
+
   - name: "Game Art & Visual Design"
     icon: "fas fa-fw fa-palette"
-    badges: ["UI", "Visual Style", "Assets"]
-    text: "Created and implemented visual elements including UI, basic assets and stylistic direction. Focused on clarity, consistency and enhancing the overall feel of the game."
+    badges: ["UI", "Assets", "Style"]
+    text: "Created UI, pixel art and basic 3D assets, focusing on clarity and visual consistency."
     level_label: "Beginner"
+
   - name: "Narrative & Worldbuilding"
     icon: "fas fa-fw fa-book"
-    badges: ["Storytelling", "Lore", "Characters"]
-    text: "Developed original worlds, characters and story concepts with depth and meaning. Interested in how narrative and gameplay connect to create immersive experiences."
+    badges: ["Story", "Lore", "Characters"]
+    text: "Developed worlds, characters and narratives with a focus on immersion and storytelling."
     level_label: "Intermediate"
+
 
 feature_row:
   - image_path: /assets/images/placeholder.png
