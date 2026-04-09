@@ -77,7 +77,22 @@ feature_row:
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
   }
- 
+
+  .skill-title {
+    color: #a18b6d;
+    border-bottom: 2px solid #a18b6d;
+  }
+
+  .skill-card {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    border-radius: 10px;
+  }
+
+  .skill-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+  }
+
 </style>
 
 ## Featured
