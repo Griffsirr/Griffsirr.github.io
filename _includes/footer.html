@@ -1,13 +1,49 @@
-{% if site.footer.links %}
-<div class="page__footer-follow">
-  <ul class="social-icons">
-    {% for link in site.footer.links %}
-      {% if link.label and link.url %}
-        <li><a href="{{ link.url }}" rel="nofollow noopener noreferrer"{% if link.target %} target="{{ link.target }}"{% endif %}><i class="{{ link.icon | default: 'fas fa-link' }}" aria-hidden="true"></i> {{ link.label | escape_once | strip }}</a></li>
-      {% endif %}
-    {% endfor %}
-  </ul>
-</div>
-{% endif %}
+<div class="custom-footer">
 
-<div class="page__footer-copyright">&copy; {% assign site_time = site.time | date: '%Y' %}{% if site.footer.since and site_time != site.footer.since %}{{ site.footer.since }} - {% endif %}{{ site_time }} <a href="{{ site.copyright_url | default: site.url }}">{{ site.copyright | default: site.title | escape_once | strip }}</a>. {{ site.data.ui-text[site.locale].powered_by | default: "Powered by" }} <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+  <!-- LEFT -->
+  <div class="footer-left">
+    <img src="/assets/images/a8c2c734827e565c4c0a4e99dd3cf184.jpg" alt="logo">
+    <span class="footer-name">My Name</span>
+  </div>
+
+  <!-- RIGHT -->
+  <div class="footer-right">
+    © {{ site.time | date: "%Y" }} My Name. All rights reserved.
+  </div>
+
+</div>
+
+<style>
+.custom-footer {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-top: 1px solid #ddd;
+  margin-top: 3rem;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.footer-left img {
+  height: 40px;
+}
+
+.footer-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.footer-right {
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+</style>
