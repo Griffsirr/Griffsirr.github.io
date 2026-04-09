@@ -73,10 +73,21 @@ feature_row:
     transition: transform 0.2s ease, box-shadow 0.2s ease;
   }
 
+  .feature__item {
+    text-align: center;
+  }
+  
   .feature__item:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
   }
+
+  
+
+  .feature__item .btn {
+  display: inline-block;
+  margin-top: 0.5rem;
+}
 
   .skill-title {
     color: #a18b6d;
