@@ -2,6 +2,13 @@
 layout: default
 ---
 
+<style>
+  .skill-title {
+  color: #6c63ff;
+  border-bottom: 2px solid #6c63ff;
+  }
+</style>
+
 {% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
   {% include page__hero.html %}
 {% elsif page.header.video.id and page.header.video.provider %}
@@ -24,10 +31,10 @@ layout: default
     </p>
   <h2>Tools</h2>
     <ul style="margin-top:0.5rem;">
-      <li><strong>Game Development:</strong> Unity, C#, gameplay systems</li>
-      <li><strong>Art:</strong> Aseprite (pixel art), Blender & Nomad Sculpt (3D), Ibis Paint</li>
-      <li><strong>Design:</strong> Level design, greyboxing, tilemapping</li>
-      <li><strong>Workflow:</strong> GitHub, Visual Studio, playtesting & iteration</li>
+      <li><strong class="skill-title">Game Development:</strong> Unity, C#, gameplay systems</li>
+      <li><strong class="skill-title">Art:</strong> Aseprite (pixel art), Blender & Nomad Sculpt (3D), Ibis Paint</li>
+      <li><strong class="skill-title">Design:</strong> Level design, greyboxing, tilemapping</li>
+      <li><strong class="skill-title">Workflow:</strong> GitHub, Visual Studio, playtesting & iteration</li>
     </ul>
     <p style="margin-top:1rem;">
       I value creativity, teamwork and adaptability. I enjoy collaborating with others, while also staying self-motivated and always aiming to improve.
