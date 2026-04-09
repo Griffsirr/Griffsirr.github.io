@@ -12,32 +12,38 @@ layout: default
     color: inherit;
     transition: transform 0.2s ease, color 0.2s ease;
   }
-
   .contact-item i {
     font-size: 28px;
     width: 40px;
     text-align: center;
     color: #a18b6d;
   }
-
   .contact-item:hover {
     transform: translateX(5px);
     color: #a18b6d;
   }
-
   .contact-item:hover i {
     color: #524739;
   }
-
   .contact-text h3 {
     margin: 0;
   }
-
   .contact-text p {
     margin: 0;
     font-size: 0.9rem;
     opacity: 0.8;
   }
+  .btn--primary {
+  background-color: #a18b6d !important;
+  border-color: #a18b6d !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.btn--primary:hover {
+  background-color: #524739 !important;
+  border-color: #524739 !important;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+}
 </style>
 
 {% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
@@ -62,11 +68,14 @@ layout: default
 <div style="display:flex; flex-wrap:wrap; gap:2rem; align-items:flex-start;">
 <!-- LEFT: Skills -->
 <div style="flex:1 1 250px; min-width:250px;">
-rawr xd
+<p style="max-width:600px; margin-bottom:1.5rem;">
+  Feel free to get in touch for collaborations, project opportunities or just to connect. 
+  You can reach me through the form or via my social platforms below.
+</p>
 <h2>CV Download</h2>
 {% include button
   url="/projects/"
-  label="View All Projects"
+  label="Download CV"
   class="btn--primary"
 %}
 
