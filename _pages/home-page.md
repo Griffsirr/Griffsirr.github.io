@@ -59,6 +59,16 @@ feature_row:
     btn_class: "btn--primary"
 ---
 <style>
+   .btn--primary {
+    background-color: #a18b6d !important;
+    border-color: #a18b6d !important;
+  }
+
+  .btn--primary:hover {
+    background-color: #524739 !important; 
+    border-color: #524739 !important;
+  }
+  
   .feature__item {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
   }
