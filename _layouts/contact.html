@@ -31,36 +31,91 @@ rawr xd
   label="View All Projects"
   class="btn--primary"
 %}
-  <h2 style="margin-top:2rem;">Other Contact Methods</h2>
+<style>
+  .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.2rem;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s ease, color 0.2s ease;
+  }
 
-  <!-- CONTACT ITEM -->
-  <div style="display:flex; gap:1rem; align-items:flex-start; margin-bottom:1.5rem;">
-    <img src="/assets/images/favicon.png" style="width:40px; height:40px;">
-    <div>
-      <h3 style="margin:0;">Twitter</h3>
-      <p style="margin:0;">Blah Blah Blah.</p>
-    </div>
-  </div>
+  .contact-item i {
+    font-size: 28px;
+    width: 40px;
+    text-align: center;
+    color: #a18b6d;
+  }
 
-  <!-- CONTACT ITEM -->
-  <div style="display:flex; gap:1rem; align-items:flex-start; margin-bottom:1.5rem;">
-    <img src="/assets/images/favicon.png" style="width:40px; height:40px;">
-    <div>
-      <h3 style="margin:0;">Twitter</h3>
-      <p style="margin:0;">Blah Blah Blah.</p>
-    </div>
-  </div>
+  .contact-item:hover {
+    transform: translateX(5px);
+    color: #a18b6d;
+  }
 
-  <!-- CONTACT ITEM -->
-  <div style="display:flex; gap:1rem; align-items:flex-start;">
-    <img src="/assets/images/favicon.png" style="width:40px; height:40px;">
-    <div>
-      <h3 style="margin:0;">Twitter</h3>
-      <p style="margin:0;">Blah Blah Blah.</p>
-    </div>
-  </div>
+  .contact-item:hover i {
+    color: #524739;
+  }
 
+  .contact-text h3 {
+    margin: 0;
+  }
+
+  .contact-text p {
+    margin: 0;
+    font-size: 0.9rem;
+    opacity: 0.8;
+  }
+</style>
+
+
+<h2 style="margin-top:2rem;">Other Contact Methods</h2>
+
+<!-- Instagram -->
+<a href="https://instagram.com/YOURUSERNAME" class="contact-item" target="_blank">
+  <i class="fab fa-instagram"></i>
+  <div class="contact-text">
+    <h3>Instagram</h3>
+    <p>@yourusername</p>
   </div>
+</a>
+
+<!-- LinkedIn -->
+<a href="https://linkedin.com/in/YOURUSERNAME" class="contact-item" target="_blank">
+  <i class="fab fa-linkedin"></i>
+  <div class="contact-text">
+    <h3>LinkedIn</h3>
+    <p>Connect professionally</p>
+  </div>
+</a>
+
+<!-- Twitter / X -->
+<a href="https://twitter.com/YOURUSERNAME" class="contact-item" target="_blank">
+  <i class="fab fa-twitter"></i>
+  <div class="contact-text">
+    <h3>Twitter</h3>
+    <p>@yourusername</p>
+  </div>
+</a>
+
+<!-- Bluesky -->
+<a href="https://bsky.app/profile/YOURUSERNAME" class="contact-item" target="_blank">
+  <i class="fab fa-bluesky"></i>
+  <div class="contact-text">
+    <h3>Bluesky</h3>
+    <p>@yourusername</p>
+  </div>
+</a>
+
+<!-- Discord -->
+<div class="contact-item">
+  <i class="fab fa-discord"></i>
+  <div class="contact-text">
+    <h3>Discord</h3>
+    <p>yourusername#1234</p>
+  </div>
+</div>
   
 <!-- RIGHT: Skills -->
 <div style="flex:1 1 250px; min-width:250px;">
