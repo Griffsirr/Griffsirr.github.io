@@ -8,31 +8,31 @@ header:
 gallery_gameplay:
   # Recommended: width "240px" to "320px" keeps a neat grid
   - url: /assets/images/a8c2c734827e565c4c0a4e99dd3cf184.jpg
-    image_path: /assets/images/placeholder.png
+    image_path: /assets/images/a8c2c734827e565c4c0a4e99dd3cf184.jpg
     alt: "Gameplay 1"
     title: "Core loop"
     caption: "Core loop"
   - url: /assets/images/a8c2c734827e565c4c0a4e99dd3cf184.jpg
-    image_path: /assets/images/placeholder.png
+    image_path: /assets/images/a8c2c734827e565c4c0a4e99dd3cf184.jpg
     alt: "Gameplay 2"
     title: "Challenge"
     caption: "Challenge"
-  - url: /assets/images/placeholder.png
+  - url: /assets/images/a8c2c734827e565c4c0a4e99dd3cf184.jpg
     image_path: /assets/images/a8c2c734827e565c4c0a4e99dd3cf184.jpg
     alt: "Gameplay 3"
     title: "Power-ups"
     caption: "Power-ups"
-  - url: /assets/images/placeholder.png
+  - url: /assets/images/a8c2c734827e565c4c0a4e99dd3cf184.jpg
     image_path: /assets/images/a8c2c734827e565c4c0a4e99dd3cf184.jpg
     alt: "Gameplay 4"
     title: "Boss arena"
     caption: "Boss arena"
-  - url: /assets/images/placeholder.png
+  - url: /assets/images/a8c2c734827e565c4c0a4e99dd3cf184.jpg
     image_path: /assets/images/a8c2c734827e565c4c0a4e99dd3cf184.jpg
     alt: "Gameplay 5"
     title: "UI feedback"
     caption: "UI feedback"
-  - url: /assets/images/placeholder.png
+  - url: /assets/images/a8c2c734827e565c4c0a4e99dd3cf184.jpg
     image_path: /assets/images/a8c2c734827e565c4c0a4e99dd3cf184.jpg
     alt: "Gameplay 6"
     title: "Final tweak"
