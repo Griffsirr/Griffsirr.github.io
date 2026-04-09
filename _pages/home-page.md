@@ -7,6 +7,17 @@ header:
 
   excerpt: "  "
 
+<style>
+  .feature__item {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .feature__item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  }
+</style>
+
 skills:
   - name: "Unity Development"
     icon: "fab fa-fw fa-unity"
