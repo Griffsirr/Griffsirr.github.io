@@ -29,7 +29,9 @@ gallery_general:
 This is my collection of artwork including game-related pieces and general work
 
 ## Game Art
+<div id="game-art"></div>
 {% include gallery id="gallery_game" layout="third" %}
 
 ## General Art
+<div id="general-art"></div>
 {% include gallery id="gallery_general" layout="third" %}
