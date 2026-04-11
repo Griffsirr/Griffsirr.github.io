@@ -28,12 +28,8 @@ gallery_general:
 ## Gallery
 This is my collection of artwork including game-related pieces and general work
 
----
-
 ## Game Art
 {% include gallery id="gallery_game" layout="third" %}
-
----
 
 ## General Art
 {% include gallery id="gallery_general" layout="third" %}
