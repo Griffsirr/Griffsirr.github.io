@@ -5,42 +5,33 @@ permalink: /gallery-page/
 header:
   overlay_image: /assets/images/a8c2c734827e565c4c0a4e99dd3cf184.jpg
 
-gallery_gameplay:
-  # Recommended: width "240px" to "320px" keeps a neat grid
-  - url: /assets/images/a8c2c734827e565c4c0a4e99dd3cf184.jpg
-    image_path: /assets/images/a8c2c734827e565c4c0a4e99dd3cf184.jpg
-    alt: "Gameplay 1"
-    title: "Core loop"
-    caption: "Core loop"
-  - url: /assets/images/a8c2c734827e565c4c0a4e99dd3cf184.jpg
-    image_path: /assets/images/a8c2c734827e565c4c0a4e99dd3cf184.jpg
-    alt: "Gameplay 2"
-    title: "Challenge"
-    caption: "Challenge"
-  - url: /assets/images/a8c2c734827e565c4c0a4e99dd3cf184.jpg
-    image_path: /assets/images/a8c2c734827e565c4c0a4e99dd3cf184.jpg
-    alt: "Gameplay 3"
-    title: "Power-ups"
-    caption: "Power-ups"
-  - url: /assets/images/a8c2c734827e565c4c0a4e99dd3cf184.jpg
-    image_path: /assets/images/a8c2c734827e565c4c0a4e99dd3cf184.jpg
-    alt: "Gameplay 4"
-    title: "Boss arena"
-    caption: "Boss arena"
-  - url: /assets/images/a8c2c734827e565c4c0a4e99dd3cf184.jpg
-    image_path: /assets/images/a8c2c734827e565c4c0a4e99dd3cf184.jpg
-    alt: "Gameplay 5"
-    title: "UI feedback"
-    caption: "UI feedback"
-  - url: /assets/images/a8c2c734827e565c4c0a4e99dd3cf184.jpg
-    image_path: /assets/images/a8c2c734827e565c4c0a4e99dd3cf184.jpg
-    alt: "Gameplay 6"
-    title: "Final tweak"
-    caption: "Final tweak"
-    
+# GAME ART
+gallery_game:
+  - image_path: /assets/images/a8c2c734827e565c4c0a4e99dd3cf184.jpg
+    alt: "Game art 1"
+  - image_path: /assets/images/a8c2c734827e565c4c0a4e99dd3cf184.jpg
+    alt: "Game art 2"
+- image_path: /assets/images/a8c2c734827e565c4c0a4e99dd3cf184.jpg
+    alt: "Game art 3"
+# GENERAL ART
+gallery_general:
+  - image_path: /assets/images/a8c2c734827e565c4c0a4e99dd3cf184.jpg
+    alt: "General art 1"
+  - image_path: /assets/images/a8c2c734827e565c4c0a4e99dd3cf184.jpg
+    alt: "General art 2"
+- image_path: /assets/images/a8c2c734827e565c4c0a4e99dd3cf184.jpg
+    alt: "General art 3"
 ---
-## Gallery
-Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
 
-## Art
-{% include gallery id="gallery_gameplay" layout="third" thumb_height="180px" thumb_height="300px" %}
+## Gallery
+This is my collection of artwork including game-related pieces and general work
+
+---
+
+## Game Art
+{% include gallery id="gallery_game" layout="third" %}
+
+---
+
+## General Art
+{% include gallery id="gallery_general" layout="third" %}
