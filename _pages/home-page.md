@@ -39,7 +39,7 @@ feature_row:
     title: "Game Art"
     excerpt: "A collection of my game-focused artwork, including pixel art, UI design and visual assets created for both 2D and 3D projects."
     url: "/gallery-page/#game-art"
-    btn_label: "View Gallery"
+    btn_label: "Game Art Gallery"
     btn_class: "btn--primary"
 
   - image_path: /assets/images/a8c2c734827e565c4c0a4e99dd3cf184.jpg
@@ -55,7 +55,7 @@ feature_row:
     title: "General Art"
     excerpt: "A wider showcase of my creative work, including digital illustrations, character designs and visual experiments outside of game development."
     url: "/gallery-page/#general-art"
-    btn_label: "View Gallery"
+    btn_label: "General Art Gallery"
     btn_class: "btn--primary"
 ---
 <style>
