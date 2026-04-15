@@ -3,7 +3,7 @@ title: " "
 layout: homepage
 permalink: /home-page/
 header:
-  overlay_image: /assets/images/MIA FULLERTON.png
+  overlay_image: /assets/images/MIA FULLERTON (1).png
 
   excerpt: "  "
 
