@@ -7,7 +7,7 @@ name: "Therese Charles"
 url: "https://Griffsirr.github.io" # Your GitHub Pages domain
 baseurl: "" # Repo name if site is in a project repo, blank for user/org site
 locale: "en-GB" # Language/region
-logo: "/assets/images/a8c2c734827e565c4c0a4e99dd3cf184.jpg" # path of logo image to display in the masthead
+logo: "/assets/images/CatArt.png" # path of logo image to display in the masthead
 masthead_title: # overrides the website title displayed in the masthead, use " " for no title
 copyright: # "copyright" name, defaults to site.title
 copyright_url: # "copyright" URL, defaults to site.url
