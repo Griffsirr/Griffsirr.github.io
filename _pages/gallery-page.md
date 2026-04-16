@@ -61,7 +61,7 @@ gallery_general:
     alt: "Game art 9"
 ---
 
-## Gallery
+## About The Gallery
 This is my collection of artwork including game-related pieces and general work
 
 ## Game Art
