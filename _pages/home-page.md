@@ -24,7 +24,7 @@ skills:
     icon: "fas fa-fw fa-palette"
     badges: ["UI", "Assets", "Style"]
     text: "Created UI, pixel art and basic 3D assets, focusing on clarity and visual consistency."
-    level_label: "Beginner"
+    level_label: "Intermediate"
 
   - name: "Narrative & Worldbuilding"
     icon: "fas fa-fw fa-book"
