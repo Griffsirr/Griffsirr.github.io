@@ -13,7 +13,7 @@ gallery_game:
     alt: "Game art 2"
   - image_path: /assets/images/MonkeyScopeArt.png
     alt: "Game art 3"
-    - image_path: /assets/images/BunnySketch.png
+  - image_path: /assets/images/BunnySketch.png
     alt: "Game art 4"
   - image_path: /assets/images/AxlArt.png
     alt: "Game art 5"
@@ -47,7 +47,7 @@ gallery_general:
     alt: "General art 5"
   - image_path: /assets/images/CabaretArt.png
     alt: "General art 6"
-    - image_path: /assets/images/SnowLeopardArt.png
+  - image_path: /assets/images/SnowLeopardArt.png
     alt: "Game art 7"
   - image_path: /assets/images/RavenArt.png
     alt: "Game art 8"
