@@ -7,20 +7,20 @@ header:
 
 # GAME ART
 gallery_game:
-  - image_path: /assets/images/a8c2c734827e565c4c0a4e99dd3cf184.jpg
+  - image_path: /assets/images/BirdScopeArt.png
     alt: "Game art 1"
-  - image_path: /assets/images/a8c2c734827e565c4c0a4e99dd3cf184.jpg
+  - image_path: /assets/images/WolfScopeArt.png
     alt: "Game art 2"
-  - image_path: /assets/images/a8c2c734827e565c4c0a4e99dd3cf184.jpg
+  - image_path: /assets/images/MonkeyScopeArt.png
     alt: "Game art 3"
 
 # GENERAL ART
 gallery_general:
-  - image_path: /assets/images/a8c2c734827e565c4c0a4e99dd3cf184.jpg
+  - image_path: /assets/images/DaisukeArt.png
     alt: "General art 1"
-  - image_path: /assets/images/a8c2c734827e565c4c0a4e99dd3cf184.jpg
+  - image_path: /assets/images/CatArt.png
     alt: "General art 2"
-  - image_path: /assets/images/a8c2c734827e565c4c0a4e99dd3cf184.jpg
+  - image_path: /assets/images/NeytiriArt.png
     alt: "General art 3"
 
 ---
