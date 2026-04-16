@@ -31,6 +31,12 @@ gallery_game:
     alt: "Game art 11"
   - image_path: /assets/images/CircusArt.png
     alt: "Game art 12"
+  - image_path: /assets/images/Screenshot 2026-04-16 145522.png
+    alt: "Game art 13"
+  - image_path: /assets/images/Screenshot 2026-04-16 144156.png
+    alt: "Game art 14"
+  - image_path: /assets/images/Screenshot 2026-04-16 144314.png
+    alt: "Game art 15"
 
 
 # GENERAL ART
