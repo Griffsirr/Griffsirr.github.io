@@ -13,6 +13,25 @@ gallery_game:
     alt: "Game art 2"
   - image_path: /assets/images/MonkeyScopeArt.png
     alt: "Game art 3"
+    - image_path: /assets/images/BunnySketch.png
+    alt: "Game art 4"
+  - image_path: /assets/images/AxlArt.png
+    alt: "Game art 5"
+  - image_path: /assets/images/RatArtGame.png
+    alt: "Game art 6"
+  - image_path: /assets/images/ClownArt.png
+    alt: "Game art 7"
+  - image_path: /assets/images/BaloonDogArt.png
+    alt: "Game art 8"
+  - image_path: /assets/images/FirebreatherArt.png
+    alt: "Game art 9"
+  - image_path: /assets/images/CageArt.png
+    alt: "Game art 10"
+  - image_path: /assets/images/PickPocketArt.png
+    alt: "Game art 11"
+  - image_path: /assets/images/CircusArt.png
+    alt: "Game art 12"
+
 
 # GENERAL ART
 gallery_general:
@@ -22,7 +41,18 @@ gallery_general:
     alt: "General art 2"
   - image_path: /assets/images/NeytiriArt.png
     alt: "General art 3"
-
+  - image_path: /assets/images/Phenomaman.png
+    alt: "General art 4"
+  - image_path: /assets/images/HumanStudyArt.png
+    alt: "General art 5"
+  - image_path: /assets/images/CabaretArt.png
+    alt: "General art 6"
+    - image_path: /assets/images/SnowLeopardArt.png
+    alt: "Game art 7"
+  - image_path: /assets/images/RavenArt.png
+    alt: "Game art 8"
+  - image_path: /assets/images/WolfArt.png
+    alt: "Game art 9"
 ---
 
 ## Gallery
