@@ -3,7 +3,7 @@ title: " "
 layout: gallery
 permalink: /gallery-page/
 header:
-  overlay_image: /assets/images/a8c2c734827e565c4c0a4e99dd3cf184.jpg
+  overlay_image: /assets/images/Gallery_IMG.png
 
 # GAME ART
 gallery_game:
