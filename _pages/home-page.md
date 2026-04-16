@@ -42,7 +42,7 @@ feature_row:
     btn_label: "Game Art Gallery"
     btn_class: "btn--primary"
 
-  - image_path: /assets/images/Screenshot 2026-04-16 144353.png
+  - image_path: /assets/images/Screenshot 2026-04-16 144314.png
     alt: "Game development projects"
     title: "Game Projects"
     excerpt: "Explore the games I’ve developed using Unity and C#, including solo projects and collaborative work focused on gameplay, storytelling and design."
