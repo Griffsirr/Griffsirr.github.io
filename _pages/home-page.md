@@ -34,7 +34,7 @@ skills:
 
 
 feature_row:
-  - image_path: /assets/images/a8c2c734827e565c4c0a4e99dd3cf184.jpg
+  - image_path: /assets/images/WolfScope.png
     alt: "Game art and visual design"
     title: "Game Art"
     excerpt: "A collection of my game-focused artwork, including pixel art, UI design and visual assets created for both 2D and 3D projects."
@@ -42,7 +42,7 @@ feature_row:
     btn_label: "Game Art Gallery"
     btn_class: "btn--primary"
 
-  - image_path: /assets/images/a8c2c734827e565c4c0a4e99dd3cf184.jpg
+  - image_path: /assets/images/Screenshot 2026-04-16 144353.png
     alt: "Game development projects"
     title: "Game Projects"
     excerpt: "Explore the games I’ve developed using Unity and C#, including solo projects and collaborative work focused on gameplay, storytelling and design."
@@ -50,7 +50,7 @@ feature_row:
     btn_label: "View Projects"
     btn_class: "btn--primary"
 
-  - image_path: /assets/images/a8c2c734827e565c4c0a4e99dd3cf184.jpg
+  - image_path: /assets/images/DaisukeArt.png
     alt: "General digital and traditional art"
     title: "General Art"
     excerpt: "A wider showcase of my creative work, including digital illustrations, character designs and visual experiments outside of game development."
