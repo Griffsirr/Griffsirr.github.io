@@ -21,7 +21,7 @@ gallery_game:
     alt: "Game art 6"
   - image_path: /assets/images/ClownArt.png
     alt: "Game art 7"
-  - image_path: /assets/images/BaloonDogArt.png
+  - image_path: /assets/images/BaloondogArt.png
     alt: "Game art 8"
   - image_path: /assets/images/FirebreatherArt.png
     alt: "Game art 9"
@@ -41,7 +41,7 @@ gallery_general:
     alt: "General art 2"
   - image_path: /assets/images/NeytiriArt.png
     alt: "General art 3"
-  - image_path: /assets/images/Phenomaman.png
+  - image_path: /assets/images/PhenomamanArt.png
     alt: "General art 4"
   - image_path: /assets/images/HumanStudyArt.png
     alt: "General art 5"
