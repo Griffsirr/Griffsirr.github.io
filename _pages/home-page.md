@@ -34,7 +34,7 @@ skills:
 
 
 feature_row:
-  - image_path: /assets/images/WolfScope.png
+  - image_path: /assets/images/WolfScopeArt.png
     alt: "Game art and visual design"
     title: "Game Art"
     excerpt: "A collection of my game-focused artwork, including pixel art, UI design and visual assets created for both 2D and 3D projects."
