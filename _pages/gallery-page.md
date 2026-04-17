@@ -9,6 +9,7 @@ header:
 gallery_game:
   - image_path: /assets/images/BirdScopeArt.png
     alt: "Game art 1"
+    caption: "Test"
   - image_path: /assets/images/WolfScopeArt.png
     alt: "Game art 2"
   - image_path: /assets/images/MonkeyScopeArt.png
@@ -81,7 +82,7 @@ gallery_general:
 
 .gallery-card img {
   width: 100%;
-  height: 200px;
+  aspect-ratio: 1 / 1;   
   object-fit: cover;
 }
 
@@ -105,7 +106,7 @@ This is my collection of artwork including game-related pieces and general work
   <div class="gallery-card">
     <img src="{{ item.image_path }}" alt="{{ item.alt }}">
     <div class="gallery-text">
-      Lorem ipsum dolor sit amet
+      {{ item.caption }}
     </div>
   </div>
 {% endfor %}
