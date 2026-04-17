@@ -83,7 +83,7 @@ gallery_general:
 }
 
 .gallery-card {
-  background: linear-gradient(to bottom, #ffffff, #a18b6d);
+  background: #ffffff;
   border-radius: 12px;
   overflow: hidden;
   cursor: pointer;
