@@ -12,53 +12,49 @@ gallery_game:
     caption: "Test"
   - image_path: /assets/images/WolfScopeArt.png
     alt: "Game art 2"
+    caption: "Test"
   - image_path: /assets/images/MonkeyScopeArt.png
     alt: "Game art 3"
+    caption: "Test"
   - image_path: /assets/images/BunnySketch.png
     alt: "Game art 4"
+    caption: "Test"
   - image_path: /assets/images/AxlArt.png
     alt: "Game art 5"
+    caption: "Test"
   - image_path: /assets/images/RatArtGame.png
     alt: "Game art 6"
+    caption: "Test"
   - image_path: /assets/images/ClownArt.png
     alt: "Game art 7"
+    caption: "Test"
   - image_path: /assets/images/BaloondogArt.png
     alt: "Game art 8"
+    caption: "Test"
   - image_path: /assets/images/FirebreatherArt.png
     alt: "Game art 9"
+    caption: "Test"
   - image_path: /assets/images/CageArt.png
     alt: "Game art 10"
+    caption: "Test"
   - image_path: /assets/images/PickPocketArt.png
     alt: "Game art 11"
+    caption: "Test"
   - image_path: /assets/images/CircusArt.png
     alt: "Game art 12"
-  - image_path: /assets/images/Screenshot 2026-04-16 145522.png
-    alt: "Game art 13"
-  - image_path: /assets/images/Screenshot 2026-04-16 144156.png
-    alt: "Game art 14"
-  - image_path: /assets/images/Screenshot 2026-04-16 144314.png
-    alt: "Game art 15"
+    caption: "Test"
 
 # GENERAL ART
 gallery_general:
   - image_path: /assets/images/DaisukeArt.png
     alt: "General art 1"
+    caption: "Test"
   - image_path: /assets/images/CatArt.png
     alt: "General art 2"
+    caption: "Test"
   - image_path: /assets/images/NeytiriArt.png
     alt: "General art 3"
-  - image_path: /assets/images/PhenomamanArt.png
-    alt: "General art 4"
-  - image_path: /assets/images/HumanStudyArt.png
-    alt: "General art 5"
-  - image_path: /assets/images/CabaretArt.png
-    alt: "General art 6"
-  - image_path: /assets/images/SnowLeopardArt.png
-    alt: "General art 7"
-  - image_path: /assets/images/RavenArt.png
-    alt: "General art 8"
-  - image_path: /assets/images/WolfArt.png
-    alt: "General art 9"
+    caption: "Test"
 ---
 
 <style>
@@ -69,9 +65,10 @@ gallery_general:
 }
 
 .gallery-card {
-  background: #fff;
+  background: linear-gradient(to bottom, #ffffff, #e9dcbe);
   border-radius: 12px;
   overflow: hidden;
+  cursor: pointer;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
@@ -82,14 +79,36 @@ gallery_general:
 
 .gallery-card img {
   width: 100%;
-  aspect-ratio: 1 / 1;   
-  object-fit: cover;
+  height: auto;
+  display: block;
 }
 
 .gallery-text {
   padding: 0.75rem;
   font-size: 0.9rem;
   text-align: center;
+}
+
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.9);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.lightbox.active {
+  display: flex;
 }
 </style>
 
@@ -103,11 +122,11 @@ This is my collection of artwork including game-related pieces and general work
 
 <div class="gallery-grid">
 {% for item in page.gallery_game %}
-  <div class="gallery-card">
+  <div class="gallery-card" onclick="openLightbox('{{ item.image_path }}')">
     <img src="{{ item.image_path }}" alt="{{ item.alt }}">
-    <div class="gallery-text">
-      {{ item.caption }}
-    </div>
+    {% if item.caption %}
+      <div class="gallery-text">{{ item.caption }}</div>
+    {% endif %}
   </div>
 {% endfor %}
 </div>
@@ -119,11 +138,26 @@ This is my collection of artwork including game-related pieces and general work
 
 <div class="gallery-grid">
 {% for item in page.gallery_general %}
-  <div class="gallery-card">
+  <div class="gallery-card" onclick="openLightbox('{{ item.image_path }}')">
     <img src="{{ item.image_path }}" alt="{{ item.alt }}">
-    <div class="gallery-text">
-      Lorem ipsum dolor sit amet
-    </div>
+    {% if item.caption %}
+      <div class="gallery-text">{{ item.caption }}</div>
+    {% endif %}
   </div>
 {% endfor %}
 </div>
+
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <img id="lightbox-img" src="">
+</div>
+
+<script>
+function openLightbox(src) {
+  document.getElementById("lightbox").classList.add("active");
+  document.getElementById("lightbox-img").src = src;
+}
+
+function closeLightbox() {
+  document.getElementById("lightbox").classList.remove("active");
+}
+</script>
