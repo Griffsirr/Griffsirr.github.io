@@ -55,6 +55,24 @@ gallery_general:
   - image_path: /assets/images/NeytiriArt.png
     alt: "General art 3"
     caption: "Test"
+  - image_path: /assets/images/PhenomamanArt.png
+    alt: "General art 4"
+    caption: "Test"
+  - image_path: /assets/images/HumanStudyArt.png
+    alt: "General art 5"
+    caption: "Test"
+  - image_path: /assets/images/CabaretArt.png
+    alt: "General art 6"
+    caption: "Test"
+  - image_path: /assets/images/SnowLeopardArt.png
+    alt: "General art 7"
+    caption: "Test"
+  - image_path: /assets/images/RavenArt.png
+    alt: "General art 8"
+    caption: "Test"
+  - image_path: /assets/images/WolfArt.png
+    alt: "General art 9"
+    caption: "Test"
 ---
 
 <style>
@@ -65,7 +83,7 @@ gallery_general:
 }
 
 .gallery-card {
-  background: linear-gradient(to bottom, #ffffff, #e9dcbe);
+  background: linear-gradient(to bottom, #ffffff, #a18b6d);
   border-radius: 12px;
   overflow: hidden;
   cursor: pointer;
