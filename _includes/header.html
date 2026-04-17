@@ -32,15 +32,39 @@
 </nav>
 
 <style>
+.custom-nav {
+  font-size: 1.1rem; 
+}
+
+/* LOGO */
+.custom-nav img {
+  height: 50px; 
+}
+
+/* LINKS */
+.nav-link {
+  padding: 0.5rem 0.3rem; 
+  font-weight: 500;
+}
+
+/* ICONS */
+.nav-icon {
+  font-size: 1.4rem;
+  padding: 0.4rem;   
+}
+
+/* HOVER (keep your style) */
 .nav-link, .nav-icon {
   color: inherit;
   text-decoration: none;
   position: relative;
   transition: color 0.2s;
 }
+
 .nav-link:hover, .nav-icon:hover {
   color: #a18b6d;
 }
+
 .nav-link::after, .nav-icon::after {
   content: '';
   display: block;
@@ -51,6 +75,7 @@
   position: absolute;
   left: 0;
 }
+
 .nav-link:hover::after, .nav-icon:hover::after {
   width: 100%;
 }
