@@ -38,7 +38,6 @@ gallery_game:
   - image_path: /assets/images/Screenshot 2026-04-16 144314.png
     alt: "Game art 15"
 
-
 # GENERAL ART
 gallery_general:
   - image_path: /assets/images/DaisukeArt.png
@@ -54,20 +53,76 @@ gallery_general:
   - image_path: /assets/images/CabaretArt.png
     alt: "General art 6"
   - image_path: /assets/images/SnowLeopardArt.png
-    alt: "Game art 7"
+    alt: "General art 7"
   - image_path: /assets/images/RavenArt.png
-    alt: "Game art 8"
+    alt: "General art 8"
   - image_path: /assets/images/WolfArt.png
-    alt: "Game art 9"
+    alt: "General art 9"
 ---
+
+<style>
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.gallery-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.gallery-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.gallery-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.gallery-text {
+  padding: 0.75rem;
+  font-size: 0.9rem;
+  text-align: center;
+}
+</style>
 
 ## About The Gallery
 This is my collection of artwork including game-related pieces and general work
 
+---
+
 ## Game Art
 <div id="game-art"></div>
-{% include gallery id="gallery_game" layout="third" %}
+
+<div class="gallery-grid">
+{% for item in page.gallery_game %}
+  <div class="gallery-card">
+    <img src="{{ item.image_path }}" alt="{{ item.alt }}">
+    <div class="gallery-text">
+      Lorem ipsum dolor sit amet
+    </div>
+  </div>
+{% endfor %}
+</div>
+
+---
 
 ## General Art
 <div id="general-art"></div>
-{% include gallery id="gallery_general" layout="third" %}
+
+<div class="gallery-grid">
+{% for item in page.gallery_general %}
+  <div class="gallery-card">
+    <img src="{{ item.image_path }}" alt="{{ item.alt }}">
+    <div class="gallery-text">
+      Lorem ipsum dolor sit amet
+    </div>
+  </div>
+{% endfor %}
+</div>
