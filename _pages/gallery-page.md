@@ -9,7 +9,7 @@ header:
 gallery_game:
   - image_path: /assets/images/BirdScopeArt.png
     alt: "Game art 1"
-    caption: "Test"
+    caption: "This is concept art made for our team game feral of a design for our antagonist, Dr Scope"
   - image_path: /assets/images/WolfScopeArt.png
     alt: "Game art 2"
     caption: "Test"
