@@ -34,13 +34,6 @@ skills:
 
 
 feature_row:
-  - image_path: /assets/images/WolfScopeArt.png
-    alt: "Game art and visual design"
-    title: "Game Art"
-    excerpt: "A collection of my game-focused artwork, including pixel art, UI design and visual assets created for both 2D and 3D projects."
-    url: "/gallery-page/#game-art"
-    btn_label: "Game Art Gallery"
-    btn_class: "btn--primary"
 
   - image_path: /assets/images/Screenshot 2026-04-16 144314.png
     alt: "Game development projects"
@@ -49,6 +42,15 @@ feature_row:
     url: "/projects-page/"
     btn_label: "View Projects"
     btn_class: "btn--primary"
+    
+  - image_path: /assets/images/WolfScopeArt.png
+    alt: "Game art and visual design"
+    title: "Game Art"
+    excerpt: "A collection of my game-focused artwork, including pixel art, UI design and visual assets created for both 2D and 3D projects."
+    url: "/gallery-page/#game-art"
+    btn_label: "Game Art Gallery"
+    btn_class: "btn--primary"
+
 
   - image_path: /assets/images/DaisukeArt.png
     alt: "General digital and traditional art"
