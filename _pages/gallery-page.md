@@ -120,13 +120,32 @@ gallery_general:
   z-index: 9999;
 }
 
-.lightbox img {
-  max-width: 90%;
-  max-height: 90%;
-}
-
 .lightbox.active {
   display: flex;
+}
+
+.lightbox img {
+  max-width: 85%;
+  max-height: 85%;
+}
+
+.lightbox-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 3rem;
+  color: white;
+  cursor: pointer;
+  padding: 1rem;
+  user-select: none;
+}
+
+.lightbox-arrow.left {
+  left: 20px;
+}
+
+.lightbox-arrow.right {
+  right: 20px;
 }
 </style>
 
@@ -136,15 +155,11 @@ This is my collection of artwork including game-related pieces and general work
 ---
 
 ## Game Art
-<div id="game-art"></div>
-
 <div class="gallery-grid">
 {% for item in page.gallery_game %}
-  <div class="gallery-card" onclick="openLightbox('{{ item.image_path }}')">
+  <div class="gallery-card" onclick="openLightbox({{ forloop.index0 }}, 'game')">
     <img src="{{ item.image_path }}" alt="{{ item.alt }}">
-    {% if item.caption %}
-      <div class="gallery-text">{{ item.caption }}</div>
-    {% endif %}
+    <div class="gallery-text">{{ item.caption }}</div>
   </div>
 {% endfor %}
 </div>
@@ -152,28 +167,70 @@ This is my collection of artwork including game-related pieces and general work
 ---
 
 ## General Art
-<div id="general-art"></div>
-
 <div class="gallery-grid">
 {% for item in page.gallery_general %}
-  <div class="gallery-card" onclick="openLightbox('{{ item.image_path }}')">
+  <div class="gallery-card" onclick="openLightbox({{ forloop.index0 }}, 'general')">
     <img src="{{ item.image_path }}" alt="{{ item.alt }}">
-    {% if item.caption %}
-      <div class="gallery-text">{{ item.caption }}</div>
-    {% endif %}
+    <div class="gallery-text">{{ item.caption }}</div>
   </div>
 {% endfor %}
 </div>
 
 <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <span class="lightbox-arrow left" onclick="event.stopPropagation(); prevImage()">❮</span>
   <img id="lightbox-img" src="">
+  <span class="lightbox-arrow right" onclick="event.stopPropagation(); nextImage()">❯</span>
 </div>
 
 <script>
-function openLightbox(src) {
+let currentIndex = 0;
+let currentGallery = [];
+let gameGallery = [
+{% for item in page.gallery_game %}
+  "{{ item.image_path }}",
+{% endfor %}
+];
+
+let generalGallery = [
+{% for item in page.gallery_general %}
+  "{{ item.image_path }}",
+{% endfor %}
+];
+
+function openLightbox(index, type) {
+  currentIndex = index;
+  currentGallery = (type === 'game') ? gameGallery : generalGallery;
+
   document.getElementById("lightbox").classList.add("active");
-  document.getElementById("lightbox-img").src = src;
+  updateImage();
 }
+
+function updateImage() {
+  document.getElementById("lightbox-img").src = currentGallery[currentIndex];
+}
+
+function closeLightbox() {
+  document.getElementById("lightbox").classList.remove("active");
+}
+
+function nextImage() {
+  currentIndex = (currentIndex + 1) % currentGallery.length;
+  updateImage();
+}
+
+function prevImage() {
+  currentIndex = (currentIndex - 1 + currentGallery.length) % currentGallery.length;
+  updateImage();
+}
+
+document.addEventListener("keydown", function(e) {
+  if (!document.getElementById("lightbox").classList.contains("active")) return;
+
+  if (e.key === "ArrowRight") nextImage();
+  if (e.key === "ArrowLeft") prevImage();
+  if (e.key === "Escape") closeLightbox();
+});
+</script>
 
 function closeLightbox() {
   document.getElementById("lightbox").classList.remove("active");
