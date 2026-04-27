@@ -2,12 +2,21 @@
 
   <div class="footer-grid">
 
-    <div class="footer-section">
+    <div class="footer-section footer-left">
       <h3>Connect</h3>
-      <a href="https://bsky.app" target="_blank">Bluesky</a>
-      <a href="https://instagram.com" target="_blank">Instagram</a>
-      <a href="https://github.com" target="_blank">GitHub</a>
-      <a href="https://discord.com" target="_blank">Discord</a>
+
+      <a href="https://bsky.app/profile/sirrgriff.bsky.social" target="_blank" class="footer-link">
+        <i class="fab fa-bluesky"></i> Bluesky
+      </a>
+      <a href="https://instagram.com/Sirr_Griff" target="_blank" class="footer-link">
+        <i class="fab fa-instagram"></i> Instagram
+      </a>
+      <a href="https://github.com/Griffsirr" target="_blank" class="footer-link">
+        <i class="fab fa-github"></i> GitHub
+      </a>
+      <a href="https://discordapp.com/users/545713738502635523" target="_blank" class="footer-link">
+        <i class="fab fa-discord"></i> Discord
+      </a>
     </div>
 
     <div class="footer-section footer-center">
@@ -18,12 +27,13 @@
       </p>
     </div>
 
-    <div class="footer-section">
+    <div class="footer-section footer-right">
       <h3>Navigate</h3>
-      <a href="/home-page/">Home</a>
-      <a href="/projects-page/">Projects</a>
-      <a href="/gallery-page/">Gallery</a>
-      <a href="/contact-page/">Contact</a>
+
+      <a href="/home-page/" class="footer-link">Home</a>
+      <a href="/projects-page/" class="footer-link">Projects</a>
+      <a href="/gallery-page/" class="footer-link">Gallery</a>
+      <a href="/contact-page/" class="footer-link">Contact</a>
     </div>
 
   </div>
@@ -39,28 +49,36 @@
 .custom-footer {
   max-width: 1000px;
   margin: 2rem auto 0 auto;
-  padding: 1.5rem 1.5rem; 
+  padding: 1.5rem;
 
   background: #a18b6d;
   color: #ffffff;
   border-radius: 10px;
 }
 
-/* GRID */
 .footer-grid {
   display: grid;
-  grid-template-columns: 1fr 1.2fr 1fr;
-  gap: 1.5rem;
-  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: start;
+}
+
+.footer-left {
+  text-align: left;
 }
 
 .footer-center {
   text-align: center;
+  max-width: 260px;
+  margin: 0 auto;
+}
+
+.footer-right {
+  text-align: right;
 }
 
 .footer-section h3 {
   margin-bottom: 0.6rem;
-  font-size: 1rem;  
+  font-size: 1rem;
 }
 
 .footer-section p {
@@ -69,19 +87,35 @@
   opacity: 0.9;
 }
 
-.footer-section a {
+.footer-link {
   display: block;
+  color: inherit;
   text-decoration: none;
-  color: #ffffff;
-  font-size: 0.85rem;
-  margin-bottom: 0.3rem;
-  opacity: 0.9;
-  transition: opacity 0.2s ease;
+  font-size: 0.9rem;
+  margin-bottom: 0.4rem;
+  position: relative;
+  transition: color 0.2s;
 }
 
-.footer-section a:hover {
-  opacity: 1;
-  text-decoration: underline;
+.footer-link i {
+  margin-right: 6px;
+}
+
+.footer-link:hover {
+  color: #000;
+}
+
+.footer-link::after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 0;
+  background: #000;
+  transition: width 0.3s;
+}
+
+.footer-link:hover::after {
+  width: 100%;
 }
 
 .footer-bottom {
@@ -98,6 +132,6 @@
 }
 
 .footer-bottom img {
-  height: 20px; 
+  height: 20px;
 }
 </style>
