@@ -12,7 +12,7 @@ skills:
     icon: "fab fa-fw fa-unity"
     badges: ["C#", "Prototyping", "Gameplay"]
     text: "Developed 2D and 3D game prototypes in Unity, focusing on core mechanics and responsive gameplay."
-    years: 2
+    years: 1
 
   - name: "Game Design"
     icon: "fas fa-fw fa-gamepad"
