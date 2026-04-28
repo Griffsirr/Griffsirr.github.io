@@ -1,7 +1,7 @@
 ---
 title: " "
 layout: homepage
-permalink: /home-page/
+permalink: /
 header:
   overlay_image: /assets/images/Homepage_IMG.png
 
