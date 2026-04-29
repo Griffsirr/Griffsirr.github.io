@@ -117,7 +117,7 @@ gallery_general:
   display: none;
   justify-content: center;
   align-items: center;
-  z-index: 9999;
+  z-index: 999999;
 }
 
 .lightbox.active {
@@ -230,9 +230,4 @@ document.addEventListener("keydown", function(e) {
   if (e.key === "ArrowLeft") prevImage();
   if (e.key === "Escape") closeLightbox();
 });
-</script>
-
-function closeLightbox() {
-  document.getElementById("lightbox").classList.remove("active");
-}
 </script>
