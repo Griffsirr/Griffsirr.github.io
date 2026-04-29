@@ -7,23 +7,17 @@ header:
 
 # GAME ART
 gallery_game:
-  - image_path: /assets/images/BirdScopeArt.png
-    alt: "Game art 1"
-    caption: "This is concept art made for our team game feral of a design for our antagonist, Dr Scope"
   - image_path: /assets/images/WolfScopeArt.png
     alt: "Game art 2"
-    caption: "Test"
-  - image_path: /assets/images/MonkeyScopeArt.png
-    alt: "Game art 3"
-    caption: "Test"
-  - image_path: /assets/images/BunnySketch.png
-    alt: "Game art 4"
-    caption: "Test"
+    caption: "This is concept art made for our team game feral of a design for our antagonist, Dr Scope"
   - image_path: /assets/images/AxlArt.png
     alt: "Game art 5"
     caption: "Test"
   - image_path: /assets/images/RatArtGame.png
     alt: "Game art 6"
+    caption: "Test"
+  - image_path: /assets/images/BirdScopeArt.png
+    alt: "Game art 3"
     caption: "Test"
   - image_path: /assets/images/ClownArt.png
     alt: "Game art 7"
@@ -31,17 +25,23 @@ gallery_game:
   - image_path: /assets/images/BaloondogArt.png
     alt: "Game art 8"
     caption: "Test"
-  - image_path: /assets/images/FirebreatherArt.png
-    alt: "Game art 9"
-    caption: "Test"
-  - image_path: /assets/images/CageArt.png
-    alt: "Game art 10"
-    caption: "Test"
   - image_path: /assets/images/PickPocketArt.png
     alt: "Game art 11"
     caption: "Test"
-  - image_path: /assets/images/CircusArt.png
-    alt: "Game art 12"
+  - image_path: /assets/images/FirebreatherArt.png
+    alt: "Game art 9"
+    caption: "Test"
+  - image_path: /assets/images/ScopeDesign.png
+    alt: "Game art 9"
+    caption: "Test"
+  - image_path: /assets/images/LeoFrogDesign.png
+    alt: "Game art 9"
+    caption: "Test"
+  - image_path: /assets/images/AnimalContainment.png
+    alt: "Game art 9"
+    caption: "Test"
+  - image_path: /assets/images/ScopesOffice.png
+    alt: "Game art 9"
     caption: "Test"
 
 # GENERAL ART
@@ -61,17 +61,14 @@ gallery_general:
   - image_path: /assets/images/HumanStudyArt.png
     alt: "General art 5"
     caption: "Test"
-  - image_path: /assets/images/CabaretArt.png
+  - image_path: /assets/images/SnowLeopardArt.png
     alt: "General art 6"
     caption: "Test"
-  - image_path: /assets/images/SnowLeopardArt.png
+  - image_path: /assets/images/RavenArt.png
     alt: "General art 7"
     caption: "Test"
-  - image_path: /assets/images/RavenArt.png
-    alt: "General art 8"
-    caption: "Test"
   - image_path: /assets/images/WolfArt.png
-    alt: "General art 9"
+    alt: "General art 8"
     caption: "Test"
 ---
 
