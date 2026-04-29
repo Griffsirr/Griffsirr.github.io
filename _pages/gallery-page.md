@@ -107,17 +107,15 @@ gallery_general:
   text-align: center;
 }
 
+/* LIGHTBOX */
 .lightbox {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.9);
+  inset: 0;
+  background: rgba(0,0,0,0.95);
   display: none;
   justify-content: center;
   align-items: center;
-  z-index: 999999;
+  z-index: 9999999;
 }
 
 .lightbox.active {
@@ -125,10 +123,11 @@ gallery_general:
 }
 
 .lightbox img {
-  max-width: 85%;
-  max-height: 85%;
+  max-width: 90%;
+  max-height: 90%;
 }
 
+/* ARROWS */
 .lightbox-arrow {
   position: absolute;
   top: 50%;
@@ -140,12 +139,12 @@ gallery_general:
   user-select: none;
 }
 
-.lightbox-arrow.left {
-  left: 20px;
-}
+.lightbox-arrow.left { left: 20px; }
+.lightbox-arrow.right { right: 20px; }
 
-.lightbox-arrow.right {
-  right: 20px;
+/* LOCK SCROLL WHEN OPEN */
+body.lightbox-open {
+  overflow: hidden;
 }
 </style>
 
@@ -176,6 +175,7 @@ This is my collection of artwork including game-related pieces and general work
 {% endfor %}
 </div>
 
+<!-- LIGHTBOX -->
 <div id="lightbox" class="lightbox" onclick="closeLightbox()">
   <span class="lightbox-arrow left" onclick="event.stopPropagation(); prevImage()">❮</span>
   <img id="lightbox-img" src="">
@@ -185,6 +185,7 @@ This is my collection of artwork including game-related pieces and general work
 <script>
 let currentIndex = 0;
 let currentGallery = [];
+
 let gameGallery = [
 {% for item in page.gallery_game %}
   "{{ item.image_path }}",
@@ -202,15 +203,17 @@ function openLightbox(index, type) {
   currentGallery = (type === 'game') ? gameGallery : generalGallery;
 
   document.getElementById("lightbox").classList.add("active");
+  document.body.classList.add("lightbox-open");
   updateImage();
-}
-
-function updateImage() {
-  document.getElementById("lightbox-img").src = currentGallery[currentIndex];
 }
 
 function closeLightbox() {
   document.getElementById("lightbox").classList.remove("active");
+  document.body.classList.remove("lightbox-open");
+}
+
+function updateImage() {
+  document.getElementById("lightbox-img").src = currentGallery[currentIndex];
 }
 
 function nextImage() {
