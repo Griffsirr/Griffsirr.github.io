@@ -76,6 +76,7 @@ gallery_general:
 ---
 
 <style>
+/* GRID */
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -107,7 +108,14 @@ gallery_general:
   text-align: center;
 }
 
-/* LIGHTBOX */
+.custom-footer,
+#main,
+.page,
+.page__content {
+  position: relative;
+  z-index: 1;
+}
+
 .lightbox {
   position: fixed;
   inset: 0;
@@ -115,7 +123,7 @@ gallery_general:
   display: none;
   justify-content: center;
   align-items: center;
-  z-index: 9999999;
+  z-index: 9999999999;
 }
 
 .lightbox.active {
@@ -142,7 +150,7 @@ gallery_general:
 .lightbox-arrow.left { left: 20px; }
 .lightbox-arrow.right { right: 20px; }
 
-/* LOCK SCROLL WHEN OPEN */
+/* LOCK SCROLL */
 body.lightbox-open {
   overflow: hidden;
 }
