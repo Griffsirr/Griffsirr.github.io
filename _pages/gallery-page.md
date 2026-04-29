@@ -64,11 +64,11 @@ gallery_general:
   - image_path: /assets/images/SnowLeopardArt.png
     alt: "General art 6"
     caption: "Test"
-  - image_path: /assets/images/RavenArt.png
-    alt: "General art 7"
-    caption: "Test"
   - image_path: /assets/images/WolfArt.png
     alt: "General art 8"
+    caption: "Test"
+  - image_path: /assets/images/RavenArt.png
+    alt: "General art 7"
     caption: "Test"
 ---
 
