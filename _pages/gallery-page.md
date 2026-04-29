@@ -31,16 +31,16 @@ gallery_game:
   - image_path: /assets/images/FirebreatherArt.png
     alt: "Game art 9"
     caption: "Test"
-  - image_path: /assets/images/ScopeDesign.png
+  - image_path: /assets/images/AnimalContainment.png
     alt: "Game art 9"
     caption: "Test"
   - image_path: /assets/images/LeoFrogDesign.png
     alt: "Game art 9"
     caption: "Test"
-  - image_path: /assets/images/AnimalContainment.png
+  - image_path: /assets/images/ScopeDesign.png
     alt: "Game art 9"
     caption: "Test"
-  - image_path: /assets/images/ScopesOffice.png
+  - image_path: /assets/images/ScopesOfficeResized.png
     alt: "Game art 9"
     caption: "Test"
 
