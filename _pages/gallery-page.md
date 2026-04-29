@@ -8,68 +8,87 @@ header:
 # GAME ART
 gallery_game:
   - image_path: /assets/images/WolfScopeArt.png
-    alt: "Game art 2"
-    caption: "This is concept art made for our team game feral of a design for our antagonist, Dr Scope"
+    alt: "Dr Scope character concept art"
+    caption: "Final concept art of antagonist Dr Scope for Feral"
+
   - image_path: /assets/images/AxlArt.png
-    alt: "Game art 5"
-    caption: "Test"
+    alt: "AXL protagonist character concept art"
+    caption: "Final concept art of protagonist AXL for Feral"
+
   - image_path: /assets/images/RatArtGame.png
-    alt: "Game art 6"
-    caption: "Test"
+    alt: "Rat character and environment concept art"
+    caption: "Concept art exploring protagonist and environment design for Flicker"
+
   - image_path: /assets/images/BirdScopeArt.png
-    alt: "Game art 3"
-    caption: "Test"
+    alt: "Early Dr Scope concept art sketch"
+    caption: "Early concept exploration for antagonist Dr Scope in Feral"
+
   - image_path: /assets/images/ClownArt.png
-    alt: "Game art 7"
-    caption: "Test"
+    alt: "Clown character card artwork"
+    caption: "Character card design for The Clown in The Eternal Circus"
+
   - image_path: /assets/images/BaloondogArt.png
-    alt: "Game art 8"
-    caption: "Test"
+    alt: "Balloon dog prop card artwork"
+    caption: "Prop card design: Balloon Dog for The Eternal Circus"
+
   - image_path: /assets/images/PickPocketArt.png
-    alt: "Game art 11"
-    caption: "Test"
+    alt: "Pickpocket action card artwork"
+    caption: "Action card design: Pickpocket for The Eternal Circus"
+
   - image_path: /assets/images/FirebreatherArt.png
-    alt: "Game art 9"
-    caption: "Test"
+    alt: "Firebreather character card artwork"
+    caption: "Character card design for The Firebreather in The Eternal Circus"
+
   - image_path: /assets/images/AnimalContainment.png
-    alt: "Game art 9"
-    caption: "Test"
+    alt: "Feral containment zone environment art"
+    caption: "Environment concept showing hybrid containment zone in Feral"
+
   - image_path: /assets/images/LeoFrogDesign.png
-    alt: "Game art 9"
-    caption: "Test"
+    alt: "Hybrid frog NPC character design"
+    caption: "Character design for an intelligent hybrid NPC in Feral"
+
   - image_path: /assets/images/ScopeDesign.png
-    alt: "Game art 9"
-    caption: "Test"
+    alt: "Dr Scope character design"
+    caption: "Character design exploration for Dr Scope in Feral"
+
   - image_path: /assets/images/ScopesOfficeResized.png
-    alt: "Game art 9"
-    caption: "Test"
+    alt: "Dr Scope office environment art"
+    caption: "Environment design for Dr Scope’s office in Feral"
+
 
 # GENERAL ART
 gallery_general:
   - image_path: /assets/images/DaisukeArt.png
-    alt: "General art 1"
-    caption: "Test"
+    alt: "Daisuke fan art from Mouthwashing"
+    caption: "Fan art of Daisuke from video game Mouthwashing"
+
   - image_path: /assets/images/CatArt.png
-    alt: "General art 2"
-    caption: "Test"
+    alt: "Cat expression study sketch"
+    caption: "Expression study exploring character emotion through a cat"
+
   - image_path: /assets/images/NeytiriArt.png
-    alt: "General art 3"
-    caption: "Test"
+    alt: "Neytiri fan art from Avatar"
+    caption: "Fan art of Neytiri from movie Avatar"
+
   - image_path: /assets/images/PhenomamanArt.png
-    alt: "General art 4"
-    caption: "Test"
+    alt: "Phenomaman fan art character"
+    caption: "Fan art of Phenomaman from game Dispatch created for a contest"
+
   - image_path: /assets/images/HumanStudyArt.png
-    alt: "General art 5"
-    caption: "Test"
+    alt: "Humanoid angel character study"
+    caption: "Original character study exploring a humanoid angel design"
+
   - image_path: /assets/images/SnowLeopardArt.png
-    alt: "General art 6"
-    caption: "Test"
+    alt: "Anthropomorphic snow leopard character"
+    caption: "Original character design: anthropomorphic snow leopard"
+
   - image_path: /assets/images/WolfArt.png
-    alt: "General art 8"
-    caption: "Test"
+    alt: "Anthropomorphic wolf character"
+    caption: "Original character design: anthropomorphic wolf"
+
   - image_path: /assets/images/RavenArt.png
-    alt: "General art 7"
-    caption: "Test"
+    alt: "Anthropomorphic raven character"
+    caption: "Another individuals character design I reimagined for Art Fight"
 ---
 
 <style>
