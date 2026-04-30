@@ -46,7 +46,7 @@ feature_row:
   - image_path: /assets/images/WolfScopeArt.png
     alt: "Game art and visual design"
     title: "Game Art"
-    excerpt: "A collection of my game-focused artwork, including pixel art, UI design and visual assets created for both 2D and 3D projects."
+    excerpt: "A collection of my game-focused artwork, including pixel art for characters and environments created for 2D projects such as Feral, a collaborative team project."
     url: "/gallery-page/#game-art"
     btn_label: "Game Art Gallery"
     btn_class: "btn--primary"
