@@ -17,7 +17,7 @@ gallery_game:
 
   - image_path: /assets/images/RatArtGame.png
     alt: "Rat character and environment concept art"
-    caption: "Concept art exploring protagonist and environment design for Flicker"
+    caption: "Early unused concept art exploring protagonist and environment design for Flicker"
 
   - image_path: /assets/images/BirdScopeArt.png
     alt: "Early Dr Scope concept art sketch"
